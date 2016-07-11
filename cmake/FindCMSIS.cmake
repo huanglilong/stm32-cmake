@@ -20,7 +20,7 @@ SET(CMSIS_COMMON_HEADERS
 
 IF(STM32_FAMILY STREQUAL "F1")
     IF(NOT STM32Cube_DIR)
-        SET(STM32Cube_DIR "/opt/STM32Cube_FW_F1_V1.2.0")
+        SET(STM32Cube_DIR "/opt/STM32Cube_FW_F1_V1.4.0")
         MESSAGE(STATUS "No STM32Cube_DIR specified, using default: " ${STM32Cube_DIR})
     ENDIF()
 
@@ -41,7 +41,7 @@ ELSEIF(STM32_FAMILY STREQUAL "F2")
     SET(CMSIS_DEVICE_SOURCES system_stm32f2xx.c)
 ELSEIF(STM32_FAMILY STREQUAL "F4")
     IF(NOT STM32Cube_DIR)
-        SET(STM32Cube_DIR "/opt/STM32Cube_FW_F4_V1.8.0")
+        SET(STM32Cube_DIR "/opt/STM32Cube_FW_F4_V1.12.0")
         MESSAGE(STATUS "No STM32Cube_DIR specified, using default: " ${STM32Cube_DIR})
     ENDIF()
 
