@@ -90,3 +90,20 @@ This project also supports ChibiOS v3.x.x and ChibiOS v16.x.x (both nil and rt k
 CMake modules for ChibiOS can find specified ChibiOS components using the COMPONENTS directive.
 
 See project `stm32-chibios` for example usage.
+
+# Build example stm32-blinky
+    $ cd stm32-blinky
+
+    $ mkdir build
+
+    $ cd build
+
+##  For stm32f1
+
+    $ cmake -DSTM32_CHIP=STM32F100C8 -DCMAKE_MODULE_PATH=/home/hll/codework/stm32-cmake/cmake -DCMAKE_TOOLCHAIN_FILE=/home/hll/codework/stm32-cmake/cmake/gcc_stm32.cmake -DCMAKE_BUILD_TYPE=Debug ..
+
+##  For stm32f4
+
+    $ cmake -DSTM32_CHIP=STM32F407VG -DCMAKE_MODULE_PATH=/home/hll/codework/stm32-cmake/cmake -DCMAKE_TOOLCHAIN_FILE=/home/hll/codework/stm32-cmake/cmake/gcc_stm32.cmake -DCMAKE_BUILD_TYPE=Debug ..
+
+    $ make
