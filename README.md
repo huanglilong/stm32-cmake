@@ -100,7 +100,7 @@ See project `stm32-chibios` for example usage.
 
 ##  For stm32f1
 
-    $ cmake -DSTM32_CHIP=STM32F100C8 -DCMAKE_MODULE_PATH=/home/hll/codework/stm32-cmake/cmake -DCMAKE_TOOLCHAIN_FILE=/home/hll/codework/stm32-cmake/cmake/gcc_stm32.cmake -DCMAKE_BUILD_TYPE=Debug ..
+    $ cmake -DSTM32_CHIP=STM32F103ZE -DCMAKE_MODULE_PATH=/home/hll/codework/stm32-cmake/cmake -DCMAKE_TOOLCHAIN_FILE=/home/hll/codework/stm32-cmake/cmake/gcc_stm32.cmake -DCMAKE_BUILD_TYPE=Debug ..
 
 ##  For stm32f4
 
