@@ -6,3 +6,14 @@
 # https://github.com/texane/stlink
 #
 st-flash write build/stm32f4-led.bin 0x8000000
+
+
+#
+# Debug scripts -- openocd
+# 
+openocd -s /usr/share/openocd/scripts -f board/stm32f429discovery.cfg
+
+#
+# New terminal
+#
+# arm-none-eabi-gdb build/stm32f4-led (elf file)
