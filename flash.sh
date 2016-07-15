@@ -5,4 +5,4 @@
 # you should install st-flash in your computer
 # https://github.com/texane/stlink
 #
-st-flash write build/stm32-blinky.bin 0x8000000
+st-flash write build/stm32f4-led.bin 0x8000000

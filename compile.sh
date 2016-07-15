@@ -5,5 +5,5 @@
 #
 mkdir -p build
 cd build
-cmake -DSTM32_CHIP=STM32F429ZI ../stm32-blinky
-make stm32-blinky.bin
+cmake -DSTM32_CHIP=STM32F429ZI ../stm32f4-led
+make stm32f4-led.bin
