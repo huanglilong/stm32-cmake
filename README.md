@@ -92,18 +92,7 @@ CMake modules for ChibiOS can find specified ChibiOS components using the COMPON
 See project `stm32-chibios` for example usage.
 
 # Build example stm32-blinky
-    $ cd stm32-blinky
+    $ ./compile.sh 
 
-    $ mkdir build
-
-    $ cd build
-
-##  For stm32f1
-
-    $ cmake -DSTM32_CHIP=STM32F103ZE -DCMAKE_MODULE_PATH=/home/hll/codework/stm32-cmake/cmake -DCMAKE_TOOLCHAIN_FILE=/home/hll/codework/stm32-cmake/cmake/gcc_stm32.cmake -DCMAKE_BUILD_TYPE=Debug ..
-
-##  For stm32f4
-
-    $ cmake -DSTM32_CHIP=STM32F407VG -DCMAKE_MODULE_PATH=/home/hll/codework/stm32-cmake/cmake -DCMAKE_TOOLCHAIN_FILE=/home/hll/codework/stm32-cmake/cmake/gcc_stm32.cmake -DCMAKE_BUILD_TYPE=Debug ..
-
-    $ make
+# Flash
+    $ ./flash.sh 

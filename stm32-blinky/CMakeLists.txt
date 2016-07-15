@@ -1,8 +1,19 @@
+# set CMAKE_MODULE_PATH for search modules
+SET(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../cmake ${CMAKE_MODULE_PATH})
+
+# set CMAKE_TOOLCHAIN_FILE for closs compile 
+SET(CMAKE_TOOLCHAIN_FILE ../cmake/gcc_stm32.cmake)
+
+# After PROJECT() command, execute toolchain-file.cmake
 PROJECT(stm32-blinky)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 ENABLE_LANGUAGE(ASM)
 
+# build type -- debug
+set(CMAKE_BUILD_TYPE Debug)
+
+# find stm32‘s package -- libraries and header files
 FIND_PACKAGE(CMSIS REQUIRED)
 FIND_PACKAGE(STM32HAL COMPONENTS gpio tim REQUIRED)
 
