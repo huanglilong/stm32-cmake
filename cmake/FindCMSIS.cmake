@@ -41,7 +41,7 @@ ELSEIF(STM32_FAMILY STREQUAL "F2")
     SET(CMSIS_DEVICE_SOURCES system_stm32f2xx.c)
 ELSEIF(STM32_FAMILY STREQUAL "F4")
     IF(NOT STM32Cube_DIR)
-        SET(STM32Cube_DIR "/opt/STM32Cube_FW_F4_V1.12.0")
+        SET(STM32Cube_DIR "/opt/STM32Cube_FW_F4_V1.13.0")
         MESSAGE(STATUS "No STM32Cube_DIR specified, using default: " ${STM32Cube_DIR})
     ENDIF()
 
